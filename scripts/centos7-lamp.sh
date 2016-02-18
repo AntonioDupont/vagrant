@@ -23,6 +23,10 @@ yum instlal -y mariadb mariadb-server mariadb-devel
 systemctl enable mariadb
 systemctl start mariadb
 
-# Download Start Content
+# Download Starter Content
+cd /vagrant
+sudo -u vagrant wget -q https://raw.githubusercontent.com/AntonioDupont/vagrant/master/files/index.html
+sudo -u vagrant wget -q https://raw.githubusercontent.com/AntonioDupont/vagrant/master/files/info.php
+
 systemctl restart httpd
 
