@@ -4,5 +4,5 @@
 yum -y update --exclude=kernel
 
 # Tools
-yum install -y git unzip nc telnet
+yum install -y git unzip nc telnet vim-enhanced
 
